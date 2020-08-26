@@ -126,38 +126,38 @@ class _SpeedometerState extends State<Speedometer> {
                     ),
                   ),
                 ),
-                Container(
-                  alignment: Alignment.center,
-                  child: Container(
-                    width: _size * 0.1,
-                    height: _size * 0.1,
-                    alignment: Alignment.center,
-                    decoration: new BoxDecoration(
-                      color: widget.kimColor,
-                      boxShadow: [
-                        new BoxShadow(
-                            color: widget.meterColor,
-                            blurRadius: 10.0,
-                            spreadRadius: 5.0)
-                      ],
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                ),
-                Container(
-                  alignment: Alignment.center,
-                  child: Transform.rotate(
-                    angle: math.pi / 12 * _kimAngle,
-                    child: ClipPath(
-                      clipper: KimClipper(),
-                      child: Container(
-                        width: _size * 0.9,
-                        height: _size * 0.9,
-                        color: widget.kimColor,
-                      ),
-                    ),
-                  ),
-                ),
+//                 Container(
+//                   alignment: Alignment.center,
+//                   child: Container(
+//                     width: _size * 0.1,
+//                     height: _size * 0.1,
+//                     alignment: Alignment.center,
+//                     decoration: new BoxDecoration(
+//                       color: widget.kimColor,
+//                       boxShadow: [
+//                         new BoxShadow(
+//                             color: widget.meterColor,
+//                             blurRadius: 10.0,
+//                             spreadRadius: 5.0)
+//                       ],
+//                       shape: BoxShape.circle,
+//                     ),
+//                   ),
+//                 ),
+//                 Container(
+//                   alignment: Alignment.center,
+//                   child: Transform.rotate(
+//                     angle: math.pi / 12 * _kimAngle,
+//                     child: ClipPath(
+//                       clipper: KimClipper(),
+//                       child: Container(
+//                         width: _size * 0.9,
+//                         height: _size * 0.9,
+//                         color: widget.kimColor,
+//                       ),
+//                     ),
+//                   ),
+//                 ),
                 Container(
                   alignment: Alignment.bottomCenter,
                   child: Padding(
