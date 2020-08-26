@@ -87,16 +87,16 @@ class _SpeedometerState extends State<Speedometer> {
                         alignment: Alignment.center,
                         width: _size,
                         height: _size,
-                        decoration: new BoxDecoration(
-                          color: widget.backgroundColor,
-                          boxShadow: [
-                            new BoxShadow(
-                                color: widget.kimColor,
-                                blurRadius: 8.0,
-                                spreadRadius: 4.0)
-                          ],
-                          shape: BoxShape.circle,
-                        ),
+                        // decoration: new BoxDecoration(
+                        //   color: widget.backgroundColor,
+                        //   boxShadow: [
+                        //     new BoxShadow(
+                        //         color: widget.kimColor,
+                        //         blurRadius: 8.0,
+                        //         spreadRadius: 4.0)
+                        //   ],
+                        //   shape: BoxShape.circle,
+                        // ),
                       ),
                     ),
                     CustomPaint(
