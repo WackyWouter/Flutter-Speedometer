@@ -15,7 +15,7 @@ class Speedometer extends StatefulWidget {
       this.backgroundColor = Colors.black,
       this.meterColor = Colors.lightGreenAccent,
       this.warningColor = Colors.redAccent,
-      this.kimColor = Colors.white,
+//       this.kimColor = Colors.white,
       this.displayNumericStyle,
       this.displayText = '',
       this.displayTextStyle})
@@ -28,7 +28,7 @@ class Speedometer extends StatefulWidget {
   final Color backgroundColor;
   final Color meterColor;
   final Color warningColor;
-  final Color kimColor;
+//   final Color kimColor;
   final TextStyle displayNumericStyle;
   final String displayText;
   final TextStyle displayTextStyle;
@@ -47,16 +47,16 @@ class _SpeedometerState extends State<Speedometer> {
     double startAngle = 3.0;
     double endAngle = 21.0;
 
-    double _kimAngle = 0;
-    if (_minValue <= _currentValue && _currentValue <= _maxValue) {
-      _kimAngle = (((_currentValue - _minValue) * (endAngle - startAngle)) /
-              (_maxValue - _minValue)) +
-          startAngle;
-    } else if (_currentValue < _minValue) {
-      _kimAngle = startAngle;
-    } else if (_currentValue > _maxValue) {
-      _kimAngle = endAngle;
-    }
+//     double _kimAngle = 0;
+//     if (_minValue <= _currentValue && _currentValue <= _maxValue) {
+//       _kimAngle = (((_currentValue - _minValue) * (endAngle - startAngle)) /
+//               (_maxValue - _minValue)) +
+//           startAngle;
+//     } else if (_currentValue < _minValue) {
+//       _kimAngle = startAngle;
+//     } else if (_currentValue > _maxValue) {
+//       _kimAngle = endAngle;
+//     }
 
     double startAngle2 = 0.0;
     double endAngle2 = 18.0;
