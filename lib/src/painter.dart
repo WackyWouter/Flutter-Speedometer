@@ -42,19 +42,19 @@ class TriangleClipper extends CustomClipper<Path> {
   bool shouldReclip(TriangleClipper oldClipper) => false;
 }
 
-// class KimClipper extends CustomClipper<Path> {
-//   @override
-//   Path getClip(Size size) {
-//     final path = Path();
-//     path.moveTo(size.width * 0.5, size.width * 0.5);
-//     path.lineTo(size.width * 0.5 + size.width / 30, size.height * 0.5);
-//     path.lineTo(size.width * 0.5 + 1, size.height - size.width / 30);
-//     path.lineTo(size.width * 0.5 - 1, size.height - size.width / 30);
-//     path.lineTo(size.width * 0.5 - size.width / 30, size.height * 0.5);
-//     path.close();
-//     return path;
-//   }
+class KimClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    final path = Path();
+    path.moveTo(size.width * 0.5, size.width * 0.5);
+    path.lineTo(size.width * 0.5 + size.width / 30, size.height * 0.5);
+    path.lineTo(size.width * 0.5 + 1, size.height - size.width / 30);
+    path.lineTo(size.width * 0.5 - 1, size.height - size.width / 30);
+    path.lineTo(size.width * 0.5 - size.width / 30, size.height * 0.5);
+    path.close();
+    return path;
+  }
 
-//   @override
-//   bool shouldReclip(KimClipper oldClipper) => false;
-// }
+  @override
+  bool shouldReclip(KimClipper oldClipper) => false;
+}
